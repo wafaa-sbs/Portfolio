@@ -36,22 +36,16 @@ class WorkController extends Controller
      */
     public function store(Request $request)
     {
-      $prmter = $request->except(['_token']);
+      // $prmter = $request->except(['_token']);
       $works = new Work();
-      $works->work_name = $prmter['work_name'];
-      $works->url_link = $prmter['url_link'];
+      $works->work_name = $request['work_name'];
+      $works->url_link = $request['url_link'];
 
       if($request->hasFile('image')){
-            $path = $request->file('image')->store('public');
-          }
+            $path = $request->file('image')->store('works');
+        }
 
-      // if($request->hasFile('image')){
-      //     $fileName = time().'_'.$request->file->getClientOriginalName();
-      //     $path = $request->file('image')->storeAs('uploads',$fileName,'public');
-      //     $img = Image::make($path)->encode();
-      //     $works->image = '/storage/' .$path;
-      //   }
-      $works->image = $path;
+      $works->image=$path;
       $works->save();
       return redirect('/work')->with('message', 'Add successfully');
     }
@@ -92,11 +86,16 @@ class WorkController extends Controller
 
       $works->work_name = $request['work_name'];
       $works->url_link = $request['url_link'];
-      if($request->hasFile('image')){
-          $fileName = time().'_'.$request->file('image')->getClientOriginalName();
-          $path = $request->file('image')->storeAs('uploads',$fileName,'public');
-          $works->image= '/storage/' .$path;
+      if($prmter->hasFile('image')){
+            $path = $request->file('image')->store('works');
+          $works->image = $path;
         }
+      // if($request->hasFile('image')){
+      //     $fileName = time().'_'.$request->file('image')->getClientOriginalName();
+      //     $path = $request->file('image')->storeAs('uploads',$fileName,'public');
+      //     $works->image= '/storage/' .$path;
+      //   }
+
       $works->save();
 
       return redirect('/work');

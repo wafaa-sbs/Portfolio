@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class SkillController extends Controller
 {
-  
+
     /**
      * Display a listing of the resource.
      *
@@ -41,6 +41,7 @@ class SkillController extends Controller
       $prmter = $request->except(['_token']);
       $skill = new Skill();
       $skill->skill_name = $prmter['skill_name'];
+      $skill->skill_name = $prmter['percentage'];
       $skill->save();
       return redirect('/skill')->with('message', 'Add successfully');
     }
@@ -79,6 +80,7 @@ class SkillController extends Controller
     {
       $skill = Skill::find($id);
     $skill->skill_name = $request['skill_name'];
+    $skill->skill_name = $prmter['percentage'];
     $skill->save();
     return redirect('/skill');
     }

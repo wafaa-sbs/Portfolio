@@ -53,11 +53,11 @@
                             <!-- <i class='bx bxs-paint skills__icon'></i> -->
                             <span class="skills__name">{{$skl->skill_name}}</span>
                         </div>
-                        <!-- <div class=" skills__ux">
+                        <div class="skills__bar " style="width: {{$skl->percentage.'%'}}; ">
 
-                        </div> -->
+                        </div>
                         <div>
-                            <!-- <span class="skills__percentage">60%</span> -->
+                            <span class="skills__percentage">{{$skl->percentage.'%'}}</span>
                         </div>
                     </div>
                     @endforeach
@@ -74,13 +74,15 @@
             <h2 class="section-title">Work</h2>
 
             <div class="work__container bd-grid">
+              @foreach ($work as $wrk)
                 <div class="work__img">
-                  <a href="{{url('https://laracasts.com')}}" target="_blank">
-                  <p>project 1</p>
-                    <img src="{{asset('img/work1.jpg')}}" alt="">
+                  <a href=" {{'http://'.$wrk->url_link}} " target="_blank">
+                  <p class="bx bx-link">{{$wrk->work_name}}</p>
+                    <img src="{{asset('/storage/'.$wrk->image)}}" alt="">
                   </a>
                 </div>
-                <div class="work__img">
+                @endforeach
+                <!-- <div class="work__img">
                     <img src="{{asset('img/work2.jpg')}}" alt="">
                 </div>
                 <div class="work__img">
@@ -94,7 +96,7 @@
                 </div>
                 <div class="work__img">
                     <img src="{{asset('img/work6.jpg')}}" alt="">
-                </div>
+                </div> -->
             </div>
         </section>
         <!--===== CONTACT =====-->

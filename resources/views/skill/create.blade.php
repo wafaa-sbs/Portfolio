@@ -9,12 +9,33 @@
     <h2 class="text-secondary mt-5 text-center">Add a Skill</h2>
     <form action="{{url('/skill')}}" method="post">
       @csrf
-      <div class="input-group mx-auto" style="width: 500px; margin-top: 30vh">
+
+      <div class="input-group mx-auto" style="width: 500px; ">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Skill Name</span>
+          </div>
+          <input type="text" class="form-control" name="work_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Percentage</span>
+          </div>
+          <input type="number" class="form-control" name="image" placeholder="between 0 to 100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="input-group mx-auto" style="width: 500px; margin-top: 30vh">
       <input class="form-control" type="text" name="skill_name" aria-describedby="button-addon2">
+      <input class="form-control" type="number" name="percentage" aria-describedby="button-addon2">
       <div class="input-group-append">
         <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Add</button>
       </div>
     </form>
-    </div>
+    </div> -->
   </body>
 </html>

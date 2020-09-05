@@ -7,7 +7,7 @@
   </head>
   <body class="bg-light">
     <h2 class="text-secondary mt-5 text-center">Add a Work</h2>
-    <form action="{{url('/work')}}" method="post">
+    <form action="{{url('/work')}}" method="post" enctype="multipart/form-data">
       @csrf
       <div class="input-group mx-auto" style="width: 500px; ">
         <div class="input-group mb-3">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\skill;
+use App\Work;
 
 class HomeController extends Controller
 {
@@ -32,6 +33,7 @@ class HomeController extends Controller
     public function index()
     {
         $skill = Skill::all();
-        return view('home',['skill'=>$skill]);
+        $work = Work::all();
+        return view('home', compact('skill', 'work'));
     }
 }
