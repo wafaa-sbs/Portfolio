@@ -30,6 +30,7 @@ class WorkCrudController extends CrudController
         CRUD::setModel(\App\Models\Work::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/work');
         CRUD::setEntityNameStrings('work', 'works');
+
     }
 
     /**
@@ -47,6 +48,17 @@ class WorkCrudController extends CrudController
          * - CRUD::column('price')->type('number');
          * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
          */
+
+
+         $this->crud->addFields([
+        // This is the field im trying to get working
+          [
+              'label' => 'Image',
+              'type' => 'file',
+              'name' => 'image',
+          ]]);
+
+
     }
 
     /**
@@ -61,11 +73,16 @@ class WorkCrudController extends CrudController
 
         CRUD::setFromDb(); // fields
 
+
+
+
         /**
          * Fields can be defined using the fluent syntax or array syntax:
          * - CRUD::field('price')->type('number');
          * - CRUD::addField(['name' => 'price', 'type' => 'number']));
          */
+         // CRUD::field('image')->type('file');
+         // CRUD::addField(['name' => 'image', 'type' => 'file']);
     }
 
     /**

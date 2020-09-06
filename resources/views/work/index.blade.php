@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Secteurs</title>
+    <title>Works</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
   </head>
   <body class="bg-light">
@@ -22,7 +22,7 @@
     </ul>
     <div class="text-center">
 
-      <a type="button" class="btn bg-secondary mt-3 px-5" href="{{url('work/create')}}">Ajouter un secteur</a>
+      <a type="button" class="btn bg-secondary mt-3 px-5" href="{{url('work/create')}}">Add Work</a>
     </div>
   </body>
 </html>
