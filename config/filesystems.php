@@ -65,10 +65,8 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
         'works' => [
-            'driver' => 'works',
+            'driver' => 'local',
             'root' => storage_path('app/'),
-            'url' => '/storage/',
-            'visibility' => 'public',
         ],
 
     ],
@@ -86,6 +84,7 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('works') => storage_path('app/works'),
     ],
 
 ];

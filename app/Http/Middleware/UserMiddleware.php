@@ -15,6 +15,9 @@ class UserMiddleware
      */
     public function handle($request, Closure $next)
     {
+
+      if ( \Auth::user()->hasRole('user'))
+        return response(trans('backpack::base.unauthorized'),401);
         return $next($request);
     }
 }

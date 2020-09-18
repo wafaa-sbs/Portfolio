@@ -44,6 +44,7 @@ return [
     'styles' => [
         'packages/backpack/base/css/bundle.css',
         'packages/backpack/base/css/styles.css',
+        'https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css',
 
         // Here's what's inside the bundle:
         // 'packages/@digitallyhappy/backstrap/css/style.min.css',
@@ -121,9 +122,9 @@ return [
     // JS files that are loaded in all pages, using Laravel's asset() helper
     'scripts' => [
         // Backstrap includes jQuery, Bootstrap, CoreUI, PNotify, Popper
+        'packages/backpack/base/js/bundle.js',
         'packages/backpack/base/js/main.js',
         'packages/backpack/base/js/scrollreveal.js',
-        'packages/backpack/base/js/bundle.js',
 
 
         // examples (everything inside the bundle, loaded from CDN)

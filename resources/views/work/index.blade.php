@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,6 +6,7 @@
     <title>Works</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
   </head>
+
   <body class="bg-light">
     <h2 class="text-secondary mb-5 text-center">Works</h2>
     <ul class="mx-auto" style="width: 75vw;">
@@ -22,7 +24,11 @@
     </ul>
     <div class="text-center">
 
-      <a type="button" class="btn bg-secondary mt-3 px-5" href="{{url('work/create')}}">Add Work</a>
+      <a type="button" class="btn bg-secondary mt-3 px-5" href="{{url('work/create')}}">Add a Work</a>
     </div>
   </body>
+
+  <!-- <div class="text-center" style=" width: 750px; margin: auto;">
+  <h2 class="text-primary mt-5 text-center" style="border-radius: 10px; height: 50px; background-color: #FFC107;">You are not allowed to access here</h2> -->
+</div>
 </html>

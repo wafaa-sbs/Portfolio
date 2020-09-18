@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
   </head>
   <body class="bg-light">
+
+
+
     <h2 class="text-secondary mb-5 text-center">Skills</h2>
     <ul class="mx-auto" style="width: 75vw;">
       @foreach ($skill as $skl)
@@ -22,7 +25,16 @@
     </ul>
     <div class="text-center">
 
-      <a type="button" class="btn bg-secondary mt-3 px-5" href="{{url('skill/create')}}">Ajouter un secteur</a>
+      <a type="button" class="btn bg-secondary mt-3 px-5" href="{{url('skill/create')}}">Add a skill</a>
     </div>
+
+
+
+    <!-- <blockquote class="blockquote text-center">
+  <p class="mb-0">You are not allowed to navigate here</p>
+  <footer class="blockquote-footer">Admin section <cite title="Source Title"></cite></footer>
+</blockquote> -->
+
+
   </body>
 </html>

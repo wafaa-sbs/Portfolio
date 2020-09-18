@@ -15,7 +15,10 @@ Route::group([
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
   // Route::resource('/skill','SkillController');
+  // Route::resource('/work', 'WorkController');
 
     Route::crud('skill', 'SkillCrudController');
     Route::crud('work', 'WorkCrudController');
+    Route::crud('education', 'EducationCrudController');
+    Route::crud('experience', 'ExperienceCrudController');
 }); // this should be the absolute last line of this file

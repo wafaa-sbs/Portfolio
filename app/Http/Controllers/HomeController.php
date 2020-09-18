@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\skill;
 use App\Work;
+use App\experiences;
+use App\educations;
+
+
 
 class HomeController extends Controller
 {
@@ -15,7 +19,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -34,6 +38,30 @@ class HomeController extends Controller
     {
         $skill = Skill::all();
         $work = Work::all();
-        return view('home', compact('skill', 'work'));
+        $education = educations::all();
+        $experience = experiences::all();
+        $this->data['breadcrumbs'] = [
+            trans('home')     => url('/home'),
+            // trans('backpack::base.dashboard') => false,
+        ];
+        return view('home', compact('skill', 'work', 'education', 'experience'));
     }
+
+
+    // public function dashboard()
+    // {
+    //     $skill = Skill::all();
+    //     $work = Work::all();
+    //     $education = educations::all();
+    //     $experience = experiences::all();
+    //     // $this->data['title'] = trans('backpack::base.dashboard'); // set the page title
+    //     $this->data['breadcrumbs'] = [
+    //         trans('home')     => url('/home'),
+    //         // trans('backpack::base.dashboard') => false,
+    //     ];
+    //
+    //     // return view(backpack_view('dashboard'), $this->data, compact('work','skill', 'education', 'experience'));
+    //
+    //
+    // }
 }

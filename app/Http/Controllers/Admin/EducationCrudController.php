@@ -2,17 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\WorkRequest;
+use App\Http\Requests\EducationRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
-// use App\Models\Work;
 
 /**
- * Class SkillCrudController
+ * Class EducationCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class WorkCrudController extends CrudController
+class EducationCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -27,10 +26,9 @@ class WorkCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\Work::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/work');
-        CRUD::setEntityNameStrings('work', 'works');
-
+        CRUD::setModel(\App\Models\Education::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/education');
+        CRUD::setEntityNameStrings('education', 'educations');
     }
 
     /**
@@ -49,6 +47,7 @@ class WorkCrudController extends CrudController
          * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
          */
 
+
     }
 
     /**
@@ -59,40 +58,55 @@ class WorkCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(WorkRequest::class);
+        CRUD::setValidation(EducationRequest::class);
+
+        // CRUD::setFromDb(); // fields
 
 
-        // CRUD::field('work_name')->type('text');
-        // CRUD::field('url_link')->type('text');
-        // CRUD::field('image')->type('upload');
+        CRUD::addField([
+          'name' => 'duration',
+         'type' => 'text',
+         'label' => 'Duration',
+         'attributes' =>[
+           'placeholder' => 'Format: YYYY - YYYY',
+         ]
 
-       //  CRUD::addField(['name' => 'work_name',
-       //   'type' => 'text',
-       //   'label' => 'Work Name',
-       // ]);
-       //  CRUD::addField(['name' => 'url_link',
-       //   'type' => 'text',
-       //   'label' => 'Work LInk',
-       // ]);
-       //  CRUD::addField(['name' => 'image',
-       //   'type' => 'upload',
-       //   'upload' => true,
-       //   'label' => 'Image',
-       //   'disk' => 'public',
-       //   // 'prefix' => 'storage/',
-       // ],'both');
+       ]);
+        CRUD::addField([
+          'name' => 'profession',
+         'type' => 'text',
+         'label' => 'Profession',
+         'attributes' =>[
+           'placeholder' => 'What you studied',
+         ]
 
+       ]);
+        CRUD::addField([
+          'name' => 'establishment',
+         'type' => 'text',
+         'label' => 'Establishment',
+         'attributes' =>[
+           'placeholder' => 'Where you studied',
+         ]
 
-       // 'atrributes'=>[ 'enctype' => 'multipart/form-data',
-       //  ]
+       ]);
+        CRUD::addField([
+          'name' => 'place',
+         'type' => 'text',
+         'label' => 'Counrty',
+         'attributes' =>[
+           'placeholder' => 'Format: Country - City',
+         ]
+
+       ]);
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
          * - CRUD::field('price')->type('number');
          * - CRUD::addField(['name' => 'price', 'type' => 'number']));
          */
-         // CRUD::field('image')->type('file');
-         // CRUD::addField(['name' => 'image', 'type' => 'file']);
+
+
     }
 
     /**

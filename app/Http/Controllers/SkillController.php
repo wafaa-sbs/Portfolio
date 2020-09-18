@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\skill;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
 
 class SkillController extends Controller
 {
@@ -41,9 +43,9 @@ class SkillController extends Controller
       $prmter = $request->except(['_token']);
       $skill = new Skill();
       $skill->skill_name = $prmter['skill_name'];
-      $skill->skill_name = $prmter['percentage'];
+      $skill->percentage = $prmter['percentage'];
       $skill->save();
-      return redirect('/skill')->with('message', 'Add successfully');
+      return redirect('/skill');
     }
 
     /**
@@ -80,7 +82,7 @@ class SkillController extends Controller
     {
       $skill = Skill::find($id);
     $skill->skill_name = $request['skill_name'];
-    $skill->skill_name = $prmter['percentage'];
+    $skill->skill_name = $request['percentage'];
     $skill->save();
     return redirect('/skill');
     }
@@ -97,4 +99,13 @@ class SkillController extends Controller
     $skill->delete();
     return redirect('/skill');
     }
+
+    // /**
+    //  * Create a new controller instance.
+    //  */
+    // public function __construct()
+    // {
+    //     $this->middleware(backpack_middleware());
+    // }
+
 }

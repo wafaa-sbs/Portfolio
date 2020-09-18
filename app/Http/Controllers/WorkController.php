@@ -47,7 +47,7 @@ class WorkController extends Controller
 
       $works->image=$path;
       $works->save();
-      return redirect('/work')->with('message', 'Add successfully');
+      return redirect('/work');
     }
 
     /**
@@ -86,7 +86,7 @@ class WorkController extends Controller
 
       $works->work_name = $request['work_name'];
       $works->url_link = $request['url_link'];
-      if($prmter->hasFile('image')){
+      if($request->hasFile('image')){
             $path = $request->file('image')->store('works');
           $works->image = $path;
         }

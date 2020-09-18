@@ -7,7 +7,7 @@
   </head>
   <body class="bg-light">
     <h2 class="text-secondary mt-5 text-center">Add a Work</h2>
-    <form action="{{url('/work')}}" method="post">
+    <form action="{{url('/work/'.$work->id)}}" method="POST" enctype="multipart/form-data">
       @csrf
       @method('PUT')
       <div class="input-group mx-auto" style="width: 500px; ">
@@ -27,7 +27,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">Work Image</span>
           </div>
-          <input type="file" class="form-control" name="image" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          <input type="file" value="{{$work->image}}" class="form-control" name="image" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Modify</button>
           </div>
