@@ -1,7 +1,5 @@
 @extends(backpack_view('blank'))
 
-
-
 @section('content')
 <div class="container">
     <main class="l-main">
