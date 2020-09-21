@@ -13,47 +13,37 @@
   <title>Portfolio website complete</title>
 </head>
 <body>
+
 <section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
-
-
-
-    <div class="contact__container" style="display: grid; grid-template-columns: 1fr;">
-        <form method="post" action="{{url('/contact')}}" class="contact__form">
-          @csrf
-          <div class="bd-grid">
-            <div class="">
-
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Name" class="contact__input {{ $errors->has('name') ? 'error' : '' }}">
-
-          </div>
-          <div class="form-group">
-            <input type="mail" name="mail" placeholder="Email" class="contact__input {{ $errors->has('mail') ? 'error' : '' }}">
-
-          </div>
-          </div>
-
-          <div class="form-group">
+  <h2 class="section-title">Contact</h2>
+    <div class="contact__container">
+      <form method="post" action="{{url('/contact')}}" class="contact__form">
+        @csrf
+        <div class="bg">
+          <div class="">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name" class="contact__input {{ $errors->has('name') ? 'error' : '' }}">
+            </div>
+            <div class="form-group">
+              <input type="mail" name="mail" placeholder="Email" class="contact__input {{ $errors->has('mail') ? 'error' : '' }}">
+            </div>
+         </div>
+         <div class="form-group">
             <textarea name="message" placeholder="Message" id="" cols="0" rows="5" class="contact__input {{ $errors->has('message') ? 'error' : '' }}"></textarea>
-
             <input type="submit" value="Envoyer" class="contact__button button">
-          </div>
-          </div>
-        </form>
+         </div>
+       </div>
+      </form>
     </div>
     @if (backpack_user()->hasRole('admin'))
     <div class="ml-5">
-
       <a type="button" class="btn bg-primary mt-5 px-5" href="{{ backpack_url('dashboard') }}">Back to Dashboard</a>
     </div>
     @else (!backpack_user()->hasRole('admin'))
     <div class="ml-5">
-
       <a type="button" class="btn bg-primary mt-5 px-5" href="{{ url('/') }}">Back to Dashboard</a>
-
     </div>
     @endif
-  </section>
+</section>
 
-  </body>
+</body>

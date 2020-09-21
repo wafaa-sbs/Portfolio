@@ -1,28 +1,10 @@
 @extends(backpack_view('blank'))
 
-
-
 @section('content')
-<div class="container">
-    <main class="l-main">
+
+
         <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Imad  </span><br> Web Developer</h1>
-
-                <a href="{{ url('/contact') }}" class="button">Contact</a>
-
-                <div class="home__social">
-                  <a href="https://linkedin.com/in/imad-elberdaoui" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                  <a href="https://be.net/elberdaouiimad" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                  <a href="https://github.com/elberdaoui" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-            </div>
-
-            <div class="home__img">
-                <img src="{{asset('img/profil5.png')}}" alt="">
-            </div>
-        </section>
+        
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">

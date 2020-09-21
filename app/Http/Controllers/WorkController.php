@@ -42,7 +42,7 @@ class WorkController extends Controller
       $works->url_link = $request['url_link'];
 
       if($request->hasFile('image')){
-            $path = $request->file('image')->store('works');
+            $path = $request->file('image')->store('public');
         }
 
       $works->image=$path;
@@ -87,7 +87,7 @@ class WorkController extends Controller
       $works->work_name = $request['work_name'];
       $works->url_link = $request['url_link'];
       if($request->hasFile('image')){
-            $path = $request->file('image')->store('works');
+          $path = $request->file('image')->store('public');
           $works->image = $path;
         }
       // if($request->hasFile('image')){

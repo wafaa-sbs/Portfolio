@@ -77,12 +77,12 @@ img{
 
 /*===== CLASS CSS ===== */
 .section-title{
-  position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
-  margin-top: var(--mb-2);
-  margin-bottom: var(--mb-4);
-  text-align: center;
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: #1dbd22;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
 }
 .section-title::after{
   position: absolute;
@@ -93,7 +93,7 @@ img{
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color:#1dbd22;
 }
 .section{
   padding-top: 3rem;
@@ -232,7 +232,7 @@ img{
 /*BUTTONS*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #1dbd22;
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -370,6 +370,7 @@ img{
 }
 
 /* ===== CONTACT =====*/
+
 .contact__input{
   width: 100%;
   font-size: var(--normal-font-size);
@@ -508,4 +509,19 @@ img{
   .home__img{
     /* right: 10%; */
   }
+}
+
+/********contact******/
+
+.bg {
+    margin-left: 33%;
+    margin-right: 33%;
+}
+.bg-primary {
+    background-color: white!important;
+    color:#1dbd22;
+    border:1px solid #1dbd22;
+    width:20%;
+    font-weight:600;
+    font-size:11px;
 }
