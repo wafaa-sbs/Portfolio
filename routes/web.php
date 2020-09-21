@@ -24,4 +24,4 @@ Route::resource('/work','WorkController');
 Route::resource('/skill','SkillController');
 Route::resource('/contact','ContactController');
 Route::resource('/education','EducationsController');
-Route::resource('/experience','ExperiencesController');
+

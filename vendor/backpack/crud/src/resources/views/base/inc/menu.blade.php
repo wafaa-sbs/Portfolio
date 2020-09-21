@@ -21,7 +21,7 @@
         <li class="nav-item"><a class="nav-link" href="{{ route('backpack.auth.login') }}">{{ trans('backpack::base.login') }}</a>
         </li>
         @if (config('backpack.base.registration_open'))
-            <li class="nav-item"><a class="nav-link" href="{{ route('backpack.auth.register') }}">{{ trans('backpack::base.register') }}</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="{{ route('backpack.auth.register') }}">{{ trans('backpack::base.register') }}</a></li> -->
         @endif
     @else
         <!-- Topbar. Contains the right part -->

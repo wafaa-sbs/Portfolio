@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class experiences extends Model
+class skill extends Model
 {
     //
 }

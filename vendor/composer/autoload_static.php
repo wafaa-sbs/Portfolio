@@ -4,20 +4,18 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
+class ComposerStaticInit9b322b3d4326c00ffb848a1f6617c0d7
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
-        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
@@ -26,15 +24,17 @@ class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
-        '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
+        'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -197,8 +197,8 @@ class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -574,8 +574,6 @@ class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\Admin\\EducationCrudController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/EducationCrudController.php',
-        'App\\Http\\Controllers\\Admin\\ExperienceCrudController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ExperienceCrudController.php',
         'App\\Http\\Controllers\\Admin\\SkillCrudController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SkillCrudController.php',
         'App\\Http\\Controllers\\Admin\\WorkCrudController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/WorkCrudController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -586,8 +584,7 @@ class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\EducationsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/EducationsController.php',
-        'App\\Http\\Controllers\\ExperiencesController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ExperiencesController.php',
+        'App\\Http\\Controllers\\EducationsController' => __DIR__ . '/../..' . '/app/Http/Controllers/EducationsController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\SkillController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SkillController.php',
         'App\\Http\\Controllers\\WorkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/WorkController.php',
@@ -603,12 +600,8 @@ class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\UserMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/UserMiddleware.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Requests\\EducationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/EducationRequest.php',
-        'App\\Http\\Requests\\ExperienceRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ExperienceRequest.php',
         'App\\Http\\Requests\\SkillRequest' => __DIR__ . '/../..' . '/app/Http/Requests/SkillRequest.php',
         'App\\Http\\Requests\\WorkRequest' => __DIR__ . '/../..' . '/app/Http/Requests/WorkRequest.php',
-        'App\\Models\\Education' => __DIR__ . '/../..' . '/app/Models/Education.php',
-        'App\\Models\\Experience' => __DIR__ . '/../..' . '/app/Models/Experience.php',
         'App\\Models\\Skill' => __DIR__ . '/../..' . '/app/Models/Skill.php',
         'App\\Models\\Work' => __DIR__ . '/../..' . '/app/Models/Work.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -658,6 +651,8 @@ class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
         'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\ReorderOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/ReorderOperation.php',
         'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\ShowOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/ShowOperation.php',
         'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\UpdateOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/UpdateOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\SkillController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/SkillController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\WorkController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/WorkController.php',
         'Backpack\\CRUD\\app\\Http\\Middleware\\CheckIfAdmin' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Middleware/CheckIfAdmin.php',
         'Backpack\\CRUD\\app\\Http\\Middleware\\UseBackpackAuthGuardInsteadOfDefaultAuthGuard' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Middleware/UseBackpackAuthGuardInsteadOfDefaultAuthGuard.php',
         'Backpack\\CRUD\\app\\Http\\Requests\\AccountInfoRequest' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Requests/AccountInfoRequest.php',
@@ -5696,10 +5691,10 @@ class ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit9f4e1fd8a22080fcecce2cda86a1edc0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9b322b3d4326c00ffb848a1f6617c0d7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9b322b3d4326c00ffb848a1f6617c0d7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit9b322b3d4326c00ffb848a1f6617c0d7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit9b322b3d4326c00ffb848a1f6617c0d7::$classMap;
 
         }, null, ClassLoader::class);
     }

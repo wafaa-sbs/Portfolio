@@ -48,4 +48,7 @@ function () {
         Route::post('edit-account-info', 'MyAccountController@postAccountInfoForm')->name('backpack.account.info.store');
         Route::post('change-password', 'MyAccountController@postChangePasswordForm')->name('backpack.account.password');
     }
+
+    Route::resource('/work','WorkController');
+    Route::resource('/skill','SkillController');
 });

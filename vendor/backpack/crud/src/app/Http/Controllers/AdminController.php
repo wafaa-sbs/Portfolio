@@ -4,6 +4,12 @@ namespace Backpack\CRUD\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 
+// use Backpack\CRUD\App\Models\skill;
+use App\skill;
+use App\Work;
+use App\educations;
+
+
 class AdminController extends Controller
 {
     protected $data = []; // the information we send to the view
@@ -23,13 +29,19 @@ class AdminController extends Controller
      */
     public function dashboard()
     {
+        $skill = Skill::all();
+        $work = Work::all();
+        $education = educations::all();
+        
         $this->data['title'] = trans('backpack::base.dashboard'); // set the page title
         $this->data['breadcrumbs'] = [
             trans('backpack::crud.admin')     => backpack_url('dashboard'),
             trans('backpack::base.dashboard') => false,
         ];
 
-        return view(backpack_view('dashboard'), $this->data);
+        return view(backpack_view('dashboard'), $this->data, compact('work','skill', 'education'));
+
+
     }
 
     /**
@@ -42,4 +54,18 @@ class AdminController extends Controller
         // The '/admin' route is not to be used as a page, because it breaks the menu's active state.
         return redirect(backpack_url('dashboard'));
     }
+
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+
+    // public function index()
+    // {
+    //
+    //
+    // }
+
 }

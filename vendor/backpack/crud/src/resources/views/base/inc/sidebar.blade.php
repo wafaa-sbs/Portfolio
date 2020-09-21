@@ -1,4 +1,4 @@
-@if (backpack_auth()->check())
+
     <!-- Left side column. contains the sidebar -->
     <div class="{{ config('backpack.base.sidebar_class') }}">
       <!-- sidebar: style can be found in sidebar.less -->
@@ -19,7 +19,7 @@
       </nav>
       <!-- /.sidebar -->
     </div>
-@endif
+
 
 @push('before_scripts')
   <script type="text/javascript">
@@ -70,7 +70,7 @@
           });
       }
 
-      // for the found links that can be considered current, make sure 
+      // for the found links that can be considered current, make sure
       // - the parent item is open
       $curentPageLink.parents('li').addClass('open');
       // - the actual element is active

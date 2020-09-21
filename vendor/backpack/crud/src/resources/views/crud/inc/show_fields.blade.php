@@ -7,4 +7,3 @@
 
     @include($fieldsViewNamespace.'.'.$field['type'], ['field' => $field])
 @endforeach
-

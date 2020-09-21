@@ -32,7 +32,7 @@
 
 <!-- <li class='nav-item'><a class='nav-link' href='{{ backpack_url('education') }}'><i class='nav-icon la la-plus'></i>Add Education</a></li> -->
 <!-- <li class='nav-item'><a class='nav-link' href='{{ backpack_url('experience') }}'><i class='nav-icon la la-plus'></i>Add Experience</a></li> -->
-<li class='nav-item'><a class='nav-link' href='{{ url('/experience') }}'><i class='nav-icon la la-plus'></i>Add Experience</a></li>
+<!-- <li class='nav-item'><a class='nav-link' /href='{{ url('/experience') }}'><i class='nav-icon la la-plus'></i>Add Experience</a></li> -->
 
 <!-- <li class='nav-item'><a class='nav-link' href='{{ backpack_url('education') }}'><i class='nav-icon la la-plus'></i>Add Education</a></li> -->
 <li class='nav-item'><a class='nav-link' href='{{ url('/education') }}'><i class='nav-icon la la-plus'></i>Add Education</a></li>

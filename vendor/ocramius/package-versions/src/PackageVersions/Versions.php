@@ -139,7 +139,7 @@ final class Versions
   'symfony/yaml' => 'v5.1.5@a44bd3a91bfbf8db12367fa6ffac9c3eb1a8804a',
   'theseer/tokenizer' => '1.2.0@75a63c33a8577608444246075ea0af0d052e452a',
   'webmozart/assert' => '1.9.1@bafc69caeb4d49c39fd0779086c03a3738cbb389',
-  'laravel/laravel' => 'dev-master@4943a02b4322d0644ebc953123e5386e2f89c7f7',
+  'laravel/laravel' => 'No version set (parsed as 1.0.0)@',
 );
 
     private function __construct()

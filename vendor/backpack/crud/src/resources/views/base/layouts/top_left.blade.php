@@ -30,7 +30,7 @@
           @yield('before_content_widgets')
 
           @yield('content')
-          
+
           @yield('after_content_widgets')
 
         </div>
@@ -39,9 +39,9 @@
 
   </div><!-- ./app-body -->
 
-  <footer class="{{ config('backpack.base.footer_class') }}">
+  <!-- <footer class="{{ config('backpack.base.footer_class') }}">
     @include(backpack_view('inc.footer'))
-  </footer>
+  </footer> -->
 
   @yield('before_scripts')
   @stack('before_scripts')
