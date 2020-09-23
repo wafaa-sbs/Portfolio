@@ -69,7 +69,7 @@
   </div>
 </section>  
         <!--===== Education =====-->
-<section id="education" class="educations-area">
+<section class="educations-area" id="education">
   <!-- <div class="container wrapper"> -->
     <div class="text-center">
       <h2>My Educations</h2>
@@ -97,7 +97,7 @@
         <div class="singleBlog">
           <img src="{{Storage::disk('local')->url($wrk->image)}}" alt="">
           <div class="blogContent">
-            <a href=" {{'https://'.$wrk->url_link}} "   target="_blank"><p class=para>{{$wrk->work_name}} </p>
+            <a href=" {{$wrk->url_link}} "   target="_blank"><p class=para>{{$wrk->work_name}} </p>
             </a>
           </div>
         </div>
@@ -109,7 +109,7 @@
       
         <!--======== FOOTER =======-->
 
-<footer class="footer" style="background-image:url(../img/pourc1.jpg);">
+<footer class="footer" style="background-image:url(../img/pourc1.jpg);background-repeat:no-repeat;">
   <p class="footer__title">SBAIS Wafaa<br>N ° 221 sultana subdivision <br>MARRAKECH/MOROCCO</p>
   <div class="footer__social">
     <a href="#"><img src="{{asset('img/fb.png')}}" alt="icon"></a>

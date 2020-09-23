@@ -45,7 +45,7 @@ class ContactController extends Controller
       $contact->message = $prm['message'];
       $contact->save();
       $message = "Message sent successfully";
-      return redirect('/contact')->withMessage($message);
+      return redirect('/contact');
     }
 
     /**

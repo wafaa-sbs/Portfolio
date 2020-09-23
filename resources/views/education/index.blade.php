@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/brico.css') }}">
   </head>
   <body class="bg-light">
-    <h2 class="text-secondary mb-5 text-center">Educations</h2>
+    <h2 class=" mb-5 text-center" style="color:#1dbd22;font-size:40px;font-family:dancing script;margin-top:5%">Educations</h2>
     <table class="table table-striped">
       <thead>
         <tr id="myth">
@@ -32,17 +32,17 @@
          <td>{{$educate->profession}}</td>
          <td>{{$educate->establishment}}</td>
          <td>{{$educate->place}}</td>
-         <td><a type="button" class="btn btn-warning ml-auto" href="{{url('/education/'.$educate->id.'/edit')}}">Edit</a></td>
+         <td><a type="button" class="btn ml-auto" style="color:#1dbd22;font-size:20px;border:1px solid #1dbd22" href="{{url('/education/'.$educate->id.'/edit')}}">Edit</a></td>
           <td><form action="{{url('education/'.$educate->id)}}" method="post">
             @csrf
             @method('DELETE')
-            <button class="btn btn-danger mx-2" type="submit">Delete</button>
+            <button class="btn mx-2" style="color:red;font-size:20px;border:1px solid red" type="submit">Delete</button>
           </form></td>
          @endforeach
 </table>
 <div class="text-center">
 
-  <a type="button" class="btn bg-secondary mt-3 px-5" href="{{url('education/create')}}">Add an education</a>
+  <a type="button" class="btn mt-3 px-5" class="btn mt-3 px-5" style="background-color:#1dbd22;color:white;font-size:20px;border:1px solid #1dbd22"   href="{{url('education/create')}}">Add an education</a>
 </div>
 </body>
 </html>

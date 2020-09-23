@@ -445,6 +445,7 @@ body { margin: 0; }
   font-weight: 400;
   padding: 2rem 0;
   margin: 3px;
+  background-size: cover;
 }
 .footer__title{
   font-size: 1rem;
@@ -465,4 +466,18 @@ body { margin: 0; }
 .bg {
     margin-left: 33%!important;
     margin-right: 33%!important;
+}
+
+.page-item.active .page-link {
+    display: none;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    display: none;
+}
+.btn-primary, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #1dbd22!important;
+    border-color: #fcfcfc!important;
+}
+.btn-link {
+    color: #45d50a;
 }

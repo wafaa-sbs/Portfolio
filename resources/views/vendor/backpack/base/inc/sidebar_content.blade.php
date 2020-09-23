@@ -5,8 +5,7 @@
 <li class="nav-item"><a href="#about" class="nav-link"><i class="la la-info nav-icon"></i>About</a></li>
 <li class="nav-item"><a href="#skills" class="nav-link"><i class="la la-mortar-board nav-icon"></i>Skills</a></li>
 <li class="nav-item"><a href="#work" class="nav-link"><i class="la la-file-code-o nav-icon"></i>Work</a></li>
-<li class="nav-item"><a href="#resume" class="nav-link"><i class="la la-certificate nav-icon"></i>Educations</a></li>
-<li class="nav-item"><a href="#resume" class="nav-link"><i class="la la-wrench nav-icon"></i>Experiences</a></li>
+<li class="nav-item"><a href="#education" class="nav-link"><i class="la la-certificate nav-icon"></i>Educations</a></li>
 <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link"><i class="la la-envelope-o nav-icon"></i>Contact</a></li>
 
 
